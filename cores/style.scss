@@ -1,0 +1,39 @@
+$warnadasar: #242424;
+$warnadasartulisan: #e7e7e7;
+
+body {
+    background-color: $warnadasar;
+    color: $warnadasartulisan;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.landing-page {
+    text-align: center;
+    text-transform: uppercase;
+
+    &-header {
+        font-size: 1.7rem;
+        font-weight: 900;
+    }
+
+    &-image {
+        max-width: 125px;
+    }
+}
+
+.belumjadi-message {
+    
+    & .animation-cursor {
+        animation: typeanimated 500ms infinite;
+    }
+}
+
+@keyframes typeanimated {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

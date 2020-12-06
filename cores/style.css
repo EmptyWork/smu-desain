@@ -1,0 +1,43 @@
+body {
+  background-color: #242424;
+  color: #e7e7e7;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.landing-page {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.landing-page-header {
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+
+.landing-page-image {
+  max-width: 125px;
+}
+
+.belumjadi-message .animation-cursor {
+  -webkit-animation: typeanimated 500ms infinite;
+          animation: typeanimated 500ms infinite;
+}
+
+@-webkit-keyframes typeanimated {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes typeanimated {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
