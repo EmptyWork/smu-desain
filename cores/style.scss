@@ -1,8 +1,10 @@
 @import 'variables';
-@import 'global';
+@import 'mixins';
 @import 'dev';
+@import 'global';
 
 @import 'animation';
 @import 'header';
 @import 'navbar';
 @import 'first-section';
+@import 'footer';

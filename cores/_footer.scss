@@ -1,0 +1,21 @@
+.footer {
+    background-color: $warnadasar;
+    color: $warnadasartulisan;
+    width: 100%;
+    padding: 2rem;
+    &__container {
+        @extend %flex-sb;
+        flex-direction: row;
+        flex-wrap: wrap;
+        // gap: 2rem;
+        max-width: 80em;
+        margin: auto;
+    }
+    &__section {
+        max-width: 30ch;
+        padding: 1rem;
+        h2 {
+            margin-bottom: 1.25rem;
+        }
+    }
+}

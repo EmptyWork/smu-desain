@@ -7,6 +7,7 @@
     }
 }
 
+
 *,*::after, *::before {
     padding: 0;
     margin: 0;
@@ -17,7 +18,15 @@ body {
     background-color: $warnadasartulisan;
     // color: $warnadasartulisan;
     font-family: 'Montserrat', sans-serif;
-    height: 400vh;
+}
+
+button, .button {
+    border: none;
+    cursor: pointer;
+    color: $warnadasartulisan;
+    padding: 1rem 1.7rem;
+    text-transform: uppercase;
+    background-color: $warnadasar;
 }
 
 a, a:focus, a:active, a:hover {
@@ -26,3 +35,14 @@ a, a:focus, a:active, a:hover {
     outline: none;
 }
 
+.hide-for-mobile {
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    @include breakpoint-up(large) {
+        display: none;
+    }
+}
