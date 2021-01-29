@@ -1,0 +1,43 @@
+.second__section {
+
+    &-hero {
+        // background-color: red;
+        padding: 1rem;
+        // width: 45ch;
+        text-align: center;
+        font-weight: normal;
+
+        small {
+            font-size: 0.9rem;
+        }
+    }
+
+    &-daftarpengurus {
+        @extend %flex-sb;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        .pengurus {
+            background: $warnadasar;
+            width: 250px;
+
+            img {
+                width: 100%;
+            }
+
+            .pengurus-info {
+                background-image: linear-gradient(to bottom, transparent, black);
+                padding: 1rem;
+                color: $warnadasartulisan;
+
+                .pengurus-bidang {
+                    display: inline-block;
+                    background-color: red;
+                    padding: 0.2rem 0.5rem;
+                    border-radius: 0.2rem;
+                }
+            }
+        }
+    }
+}

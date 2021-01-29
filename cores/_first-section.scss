@@ -1,13 +1,5 @@
 .first__section {
     margin-top: 4rem;
-    &-container {
-        max-width: 70em;
-        padding: 2rem;
-        margin: auto;
-        @extend %flex-sb;
-        justify-content: center;
-    }
-
     &-hero {
         // background-color: red;
         padding: 1rem;
