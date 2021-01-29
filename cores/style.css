@@ -106,6 +106,7 @@ a, a:focus, a:active, a:hover {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 9;
 }
 
 .navbar::after {
@@ -165,6 +166,7 @@ a, a:focus, a:active, a:hover {
 
 .navbar__middle a {
   position: relative;
+  text-decoration: none;
 }
 
 .navbar__middle a::before {
@@ -252,7 +254,7 @@ a, a:focus, a:active, a:hover {
 
 .second__section-daftarpengurus .pengurus {
   background: var(--warnadasar);
-  width: 250px;
+  width: 15.625rem;
 }
 
 .second__section-daftarpengurus .pengurus img {
@@ -266,6 +268,10 @@ a, a:focus, a:active, a:hover {
   color: var(--warnadasartulisan);
 }
 
+.second__section-daftarpengurus .pengurus .pengurus-info .pengurus-nama {
+  font-weight: 700;
+}
+
 .second__section-daftarpengurus .pengurus .pengurus-info .pengurus-bidang {
   display: inline-block;
   background-color: red;
@@ -274,10 +280,55 @@ a, a:focus, a:active, a:hover {
 }
 
 .footer {
+  position: relative;
   background-color: var(--warnadasar);
   color: var(--warnadasartulisan);
   width: 100%;
+  font-size: 0.9rem;
   padding: 2rem;
+  margin-top: 8em;
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  background-color: inherit;
+  top: -9.9375rem;
+  width: 100%;
+  left: 0;
+  height: 10rem;
+  -webkit-clip-path: polygon(7% 81%, 84% 90%, 100% 100%, 0% 100%);
+          clip-path: polygon(7% 81%, 84% 90%, 100% 100%, 0% 100%);
+}
+
+.footer__link {
+  margin-bottom: 0.5rem;
+}
+
+.footer h4 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.footer__grid {
+  display: -ms-grid;
+  display: grid;
+  max-width: 90em;
+  margin: auto;
+  -ms-grid-columns: 20em 1fr;
+      grid-template-columns: 20em 1fr;
+  padding-top: 3rem;
+}
+
+@media screen and (max-width: 63.9375em) {
+  .footer__grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.footer__grid img {
+  width: 100%;
 }
 
 .footer__container {
@@ -287,12 +338,10 @@ a, a:focus, a:active, a:hover {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 80em;
-  margin: auto;
 }
 
 .footer__section {
-  max-width: 30ch;
+  max-width: 35ch;
   padding: 1rem;
 }
 

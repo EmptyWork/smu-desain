@@ -20,7 +20,7 @@
         flex-wrap: wrap;
         .pengurus {
             background: $warnadasar;
-            width: 250px;
+            width: 15.625rem;
 
             img {
                 width: 100%;
@@ -31,6 +31,9 @@
                 padding: 1rem;
                 color: $warnadasartulisan;
 
+                .pengurus-nama {
+                    font-weight: 700;
+                }
                 .pengurus-bidang {
                     display: inline-block;
                     background-color: red;

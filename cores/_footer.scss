@@ -1,18 +1,58 @@
 .footer {
+    position: relative;
     background-color: $warnadasar;
     color: $warnadasartulisan;
     width: 100%;
+    font-size: 0.9rem;
     padding: 2rem;
+    margin-top: 8em;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: inherit;
+        top: -9.9375rem;
+        width: 100%;
+        left: 0;
+        height: 10rem;
+        clip-path: polygon(7% 81%, 84% 90%, 100% 100%, 0% 100%);
+    }
+
+    &__link {
+        // background-color: red;
+        margin-bottom: 0.5rem;
+    }
+
+    h4 {
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+
+    &__grid {
+        display: grid;
+        max-width: 90em;
+        margin: auto;
+        grid-template-columns: 20em 1fr;
+        padding-top: 3rem;
+
+        @include breakpoint-down(medium) {
+            grid-template-columns: 1fr;
+        }
+
+
+        img {
+            width: 100%;
+        }
+    }
+
     &__container {
         @extend %flex-sb;
         flex-direction: row;
         flex-wrap: wrap;
         // gap: 2rem;
-        max-width: 80em;
-        margin: auto;
     }
     &__section {
-        max-width: 30ch;
+        max-width: 35ch;
         padding: 1rem;
         h2 {
             margin-bottom: 1.25rem;
