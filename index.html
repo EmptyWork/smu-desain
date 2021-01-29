@@ -16,6 +16,7 @@
 </head>
 <body>
   <header class="landingpage">
+    <div class="landingpage__event"></div>
     <div class="landingpage__text">
       <p>Universitas Kristen Indonesia Maluku</p>
       <h1>Senat Mahasiswa Universitas</h1>
@@ -29,15 +30,25 @@
         <img src="./image/LogoUkim.png" alt="Logo UKIM" width="40px">
         <p>
           <strong class="navbar__brand-senat">Senat Mahasiswa</strong>
-          <span class="navbar__brand-univ"><small>Universitas</small></span>
+          <span class="navbar__brand-univ">Universitas</span>
         </p>
       </div>
       <div class="navbar__middle hide-for-mobile">
-        <div class="navbar__link"><a href="#">Galeri</a></div>
-        <div class="navbar__link"><a href="#">Misi</a></div>
-        <div class="navbar__link"><a href="#">Visi</a></div>
-        <div class="navbar__link"><a href="#">Blog</a></div>
-        <div class="navbar__link"><a href="#">UKIM</a></div>
+        <div class="navbar__link"><a class="main__link" href="#">Galeri</a></div>
+        <div class="navbar__link"><a class="main__link" href="#">Misi</a></div>
+        <div class="navbar__link"><a class="main__link" href="#">Visi</a></div>
+        <div class="navbar__link"><a class="main__link" href="#">Blog</a></div>
+        <div class="navbar__link">
+          <a class="main__link" href="#">UKIM
+            <div class="navbar__sublinks">
+              <div class="navbar__sublinks-container">
+                <div class="navbar__sublink"><a class="normal" target="_blank" href="https://ukim.ac.id">Website UKIM</a></div>
+                <div class="navbar__sublink"><a class="normal" target="_blank" href="http://siakad.ukim.ac.id/">Siakad UKIM</a></div>
+                <div class="navbar__sublink"><a class="normal" target="_blank" href="https://pmbukim.online/">PMBUKIM</a></div>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
       <div class="navbar__more hide-for-desktop">
         <span></span>
@@ -46,23 +57,30 @@
   </nav>
   <main>
     <section class="first__section">
-      <div class="section-container">
+      <div class="section__container">
         <h2 class="first__section-hero">
           <strong>Motto Kami!</strong><br/><br/>
           "Memberikan contoh yang baik untuk yang lain, menjadi organisasi yang mandiri dan kreatif"<br/>
-          <small>Ketua Umum Senat Mahasiswa Universitas</small><br/><br/>
-          <button>Program Kami</button>
-          <button>Laporan</button>
-          <button>Struktur</button>
+          <small>Ketua Umum Senat Mahasiswa Universitas*</small><br/><br/>
+          <div class="button__group">
+            <button>Program Kami</button><button>Laporan</button><button>Struktur</button>
+          </div>
+          <span class="addnote">*Senat Mahasiswa Periode 2020/2021</span>
         </h2>
       </div>
     </section>
+    <!-- TODO: Add Mentor area -->
+    <!-- <section c;ass="mentor_section">
+      <h2>
+        Mentor Kami!
+      </h2>
+    </section> -->
     <section class="second__section">
       <h2 class="second__section-hero">
-        <strong>Siapa kami?</strong><br/>
-        <small>Kami adalah Perwakilan-perwakilan dari Fakultas yang ada di Universitas Kristen Indonesia Maluku</small>
+        <strong>Siapa kami?</strong><br/><br/>
+        <p class="desc">Kami adalah Perwakilan-perwakilan dari Fakultas yang ada di Universitas Kristen Indonesia Maluku</p>
       </h2>
-      <div class="section-container">
+      <div class="section__container">
         <div class="second__section-daftarpengurus">
           <div class="pengurus">
             <img src="./image/eby-nb.png" alt="#'s Photo" class="pengurus-img">
@@ -93,7 +111,7 @@
             <div class="pengurus-info">
               <div class="pengurus-nama">Nama</div>
               <div class="pengurus-jurusan">Fakultas'00</div>
-              <div class="pengurus-bidang">Bidang</div>
+              <div class="pengurus-bidang">Ketua Bidang I</div>
             </div>
           </div>
           <div class="pengurus">
@@ -101,7 +119,7 @@
             <div class="pengurus-info">
               <div class="pengurus-nama">Nama</div>
               <div class="pengurus-jurusan">Fakultas'00</div>
-              <div class="pengurus-bidang">Bidang</div>
+              <div class="pengurus-bidang">Ketua Bidang II</div>
             </div>
           </div>
           <div class="pengurus">
@@ -109,7 +127,7 @@
             <div class="pengurus-info">
               <div class="pengurus-nama">Nama</div>
               <div class="pengurus-jurusan">Fakultas'00</div>
-              <div class="pengurus-bidang">Bidang</div>
+              <div class="pengurus-bidang">Ketua Bidang III</div>
             </div>
           </div>
           <div class="pengurus">
@@ -117,7 +135,7 @@
             <div class="pengurus-info">
               <div class="pengurus-nama">Nama</div>
               <div class="pengurus-jurusan">Fakultas'00</div>
-              <div class="pengurus-bidang">Bidang</div>
+              <div class="pengurus-bidang">Ketua Bidang IV</div>
             </div>
           </div>
           <div class="pengurus">
@@ -125,7 +143,7 @@
             <div class="pengurus-info">
               <div class="pengurus-nama">Nama</div>
               <div class="pengurus-jurusan">Fakultas'00</div>
-              <div class="pengurus-bidang">Bidang</div>
+              <div class="pengurus-bidang">Ketua Bidang V</div>
             </div>
           </div>
           <div class="pengurus">
@@ -133,7 +151,7 @@
             <div class="pengurus-info">
               <div class="pengurus-nama">Nama</div>
               <div class="pengurus-jurusan">Fakultas'00</div>
-              <div class="pengurus-bidang">Bidang</div>
+              <div class="pengurus-bidang">Sekretaris Bidang I</div>
             </div>
           </div>
           <div class="pengurus">
@@ -141,7 +159,31 @@
             <div class="pengurus-info">
               <div class="pengurus-nama">Nama</div>
               <div class="pengurus-jurusan">Fakultas'00</div>
-              <div class="pengurus-bidang">Bidang</div>
+              <div class="pengurus-bidang">Sekretaris Bidang II</div>
+            </div>
+          </div>
+          <div class="pengurus">
+            <img src="./image/eby-nb.png" alt="#'s Photo" class="pengurus-img">
+            <div class="pengurus-info">
+              <div class="pengurus-nama">Nama</div>
+              <div class="pengurus-jurusan">Fakultas'00</div>
+              <div class="pengurus-bidang">Sekretaris Bidang III</div>
+            </div>
+          </div>
+          <div class="pengurus">
+            <img src="./image/eby-nb.png" alt="#'s Photo" class="pengurus-img">
+            <div class="pengurus-info">
+              <div class="pengurus-nama">Nama</div>
+              <div class="pengurus-jurusan">Fakultas'00</div>
+              <div class="pengurus-bidang">Sekretaris Bidang IV</div>
+            </div>
+          </div>
+          <div class="pengurus">
+            <img src="./image/eby-nb.png" alt="#'s Photo" class="pengurus-img">
+            <div class="pengurus-info">
+              <div class="pengurus-nama">Nama</div>
+              <div class="pengurus-jurusan">Fakultas'00</div>
+              <div class="pengurus-bidang">Sekretaris Bidang V</div>
             </div>
           </div>
         </div>
@@ -162,19 +204,25 @@
           <div class="footer__link"><a href="#">Instagram</a></div>
         </div>
         <div class="footer__section footer__links">
-          <h4>Link Tambahan</h4>
+          <h4>Link UKIM</h4>
           <div class="footer__link"><a href="#">Universitas Kristen Indonesia Maluku</a></div>
           <div class="footer__link"><a href="#">Siakad Universitas</a></div>
-          <div class="footer__link"><a href="#">Fakultas Informatika</a></div>
+          <div class="footer__link"><a href="#">Fakultas Informatika</a></div><br/>
+          <h4>Kredit</h4>
+          <div class="footer__link">Desain oleh <a class="footer__link" href="http://eazbi.rf.gd" target="_blank">EmptyWork</a></div>
+          <div class="footer__link">Art oleh <a class="footer__link" href="http://eazbi.rf.gd" target="_blank">EmptyWork</a></div>
+          <div class="footer__link">Landing Image oleh <a class="footer__link" href="https://unsplash.com/@brandonsiu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Brandon Siu</a></div>
+
         </div>
         <div class="footer__section footer__copyright">
           <h4>Dilindungi oleh</h4>
-          <p>&copy; Hakcipta <span class="tahunbuat">2021</span> - SMU Bidang V</p>
-          <p>🔺Desain oleh <a class="footer__link" href="eazbi.rf.gd" target="_blank">EmptyWork</a></p><br/>
-          <p>Website ini dibuat dengan tujuan untuk membantu Senat Mahasiswa Universitas dalam melakukan kegiatan berorganisasi dan koordinasi dengan pihak kampus</p>
+          <p>Hakcipta &copy; SMU Bidang V - <span class="tahunbuat">2021</span></p><br/>
+          <p>Website ini dibuat dengan tujuan untuk membantu Senat Mahasiswa Universitas dalam melakukan kegiatan berorganisasi dan koordinasi dengan pihak kampus</p><br/>
+          <p>Senat Mahasiswa Universitas merupakan organisasi dibawah naungan Universitas Kristen Indonesia Maluku</p>
         </div>
       </div>
     </div>
   </footer>
+  <script src="./js/main.js"></script>
 </body>
 </html>

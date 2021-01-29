@@ -50,12 +50,37 @@
         flex-direction: row;
         flex-wrap: wrap;
         // gap: 2rem;
+
+        a {
+            position: relative;
+            text-decoration: none;
+        
+            &::before {
+                content: "";
+                position: absolute;
+                height: 0.1875rem;
+                width: 0%;
+                background-color: $warnadasartulisan;
+                bottom: -0.2rem;
+                transition: 200ms ease-in-out;
+            }
+        
+            &:hover,&:focus {
+                &::before {
+                    width: 75%;
+                }
+            }
+        }
     }
     &__section {
         max-width: 35ch;
         padding: 1rem;
         h2 {
             margin-bottom: 1.25rem;
+        }
+
+        p {
+            line-height: 1.5;
         }
     }
 }
