@@ -1,0 +1,10 @@
+.landingpage {
+    background-color: $warnadasar;
+    color: $warnadasartulisan;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    padding: 2rem;
+    @extend %flex;
+}

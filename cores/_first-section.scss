@@ -1,0 +1,27 @@
+.first--section {
+    margin-top: 4rem;
+    &-container {
+        max-width: 70rem;
+        padding: 2rem;
+        margin: auto;
+        @extend %flex-sb;
+        justify-content: center;
+    }
+
+    &-hero {
+        // background-color: red;
+        padding: 1rem;
+        width: 45ch;
+        text-align: center;
+        font-weight: normal;
+
+        small {
+            font-size: 0.9rem;
+        }
+    }
+
+    &-left,&-right {
+        width: 30ch;
+        line-height: 1.3;
+    }
+}

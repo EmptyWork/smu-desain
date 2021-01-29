@@ -1,0 +1,86 @@
+.navbar {
+    background-color: $warnadasar;
+    color: $warnadasartulisan;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    &--brand {
+        justify-content: center;
+        @extend %flex;
+        align-items: center;
+        gap: 0.4rem;
+        text-transform: uppercase;
+        &-senat {
+            display: block;
+            width: fit-content;
+        }
+        // &-univ {
+
+        // }
+    }
+    &--container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        align-items: center;
+        height: 60px;
+        padding: 0 1.5rem;
+
+        @extend %flex-sb;
+    }
+    &--middle {
+        display: flex;
+        gap: 0.625rem;
+        // text-transform: uppercase;
+        font-weight: 600;
+        // visibility: hidden;
+        // display: none;
+
+        a {
+            position: relative;
+        
+            &::before {
+                content: "";
+                position: absolute;
+                height: 3px;
+                width: 0%;
+                background-color: $warnadasartulisan;
+                bottom: -1.3125rem;
+                transition: 200ms ease-in-out;
+            }
+        
+            &:hover,&:focus {
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &--more {
+        span {
+            position: relative;
+            display: block;
+            width: 25px;
+            height: 2px;
+            background-color: $warnadasartulisan;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 25px;
+                height: 2px;
+                background-color: $warnadasartulisan;
+                margin-top: 7px;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                width: 25px;
+                height: 2px;
+                background-color: $warnadasartulisan;
+                margin-top: -7px;
+            }
+        }
+    }
+    // @extend %dev;
+}

@@ -8,31 +8,54 @@
     <meta name="theme-color" content="#16106e" />
     <meta name="description" content="Website Resmi dari Senat Mahasiswa Universitas Kristen Indonesia Maluku" />
     <title>SM Universitas Kristen Indonesia  Maluku</title>
-    <link rel="stylesheet" href="cores/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="cores/style.css">
     <link rel="shortcut icon" href="image/LogoUkim.png" type="image/x-png">
 </head>
 <body>
-  <div class="belumjadi-message">
-    <span style="color: #d43232">404: file tidak di temukan</span><br/>
-    <span style="color: #81d432">senat@ukim.ac.id</span>:~$  
-    <span class="txt-rotate" 
-      data-period="2000"
-      data-rotate='[ 
-        "Selamat Datang", 
-        "Masih di buat"
-      ]'>
-      <span class="txt-output"></span>
-    </span>
-    <span class="animation-cursor">_</span>
-  </div>
-    <section class="landing-page temporary-front">
-        <img class="landing-page-image" src="image/LogoUkim.png" alt="Logo UKIM">
-        <div class="landing-page-text">
-          Senat Mahasiswa<br/>
-          Universitas Kristen Indonesia Maluku<br/>
-          Periode 2020 - 2021
+  <header class="landingpage">
+    <div class="landingpage--text">
+      <p>Universitas Kristen Indonesia Maluku</p>
+      <h1>Senat Mahasiswa Universitas</h1>
+      <p>Ambon, Periode 2020-2021</p>
+    </div>
+  </header>
+  <nav class="navbar"> 
+    <div class="navbar--container">
+      <div class="navbar--brand">
+        <img src="./image/LogoUkim.png" alt="Logo UKIM" width="40px">
+        <p>
+          <strong class="navbar--brand-senat">Senat Mahasiswa</strong>
+          <span class="navbar--brand-univ">Universitas</span>
+        </p>
+      </div>
+      <div class="navbar--middle">
+        <div class="navbar--link"><a href="#">Galeri</a></div>
+        <div class="navbar--link"><a href="#">Misi</a></div>
+        <div class="navbar--link"><a href="#">Visi</a></div>
+        <div class="navbar--link"><a href="#">Blog</a></div>
+      </div>
+      <div class="navbar--more">
+        <span></span>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="first--section">
+      <div class="first--section-container">
+        <h2 class="first--section-hero">
+          "Memberikan contoh yang baik untuk yang lain, menjadi organisasi yang mandiri dan kreatif"<br/>
+          <small>Ketua Umum Senat Mahasiswa Universitas</small>
+        </h2>
+        <!-- <div class="first--section-left">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem adipisci doloribus debitis aliquid odit veniam alias voluptate voluptas at. Distinctio adipisci perferendis dolor neque officia quasi reiciendis illo assumenda excepturi.
         </div>
+        <div class="first--section-right">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores rerum voluptatum pariatur iure dolorum autem explicabo, maxime vero itaque aut animi incidunt reprehenderit eaque laudantium nostrum facilis molestias. Numquam, vitae!
+        </div> -->
+      </div>
     </section>
+  </main>
 </body>
-<script src="js/animation-min.js"></script>
 </html>
