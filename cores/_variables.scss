@@ -1,7 +1,13 @@
+// // Variable SCSS
+// $warna: #0a0b36;
+
+
+// Variable CSS -> Variable SCSS
 $warnadasar: var(--warnadasar);
 $warnadasartulisan: var(--warnadasartulisan);
 
 :root {
-    --warnadasar: #0a0b36;
+    // --warnadasar: #0a0b36;
+    --warnadasar: #001B3A;
     --warnadasartulisan: #e7e7e7;
 }

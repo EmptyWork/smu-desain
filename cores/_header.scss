@@ -2,7 +2,9 @@
     background-color: $warnadasar;
     background-image: linear-gradient(to bottom, transparent, $warnadasar), url('../image/stock-3-min.jpg');
     background-repeat: no-repeat;
-    background-position: bottom center;
+    @include breakpoint-up(large) {
+        background-position: bottom center;
+    }
     background-size: cover;
     color: $warnadasartulisan;
     position: relative;
@@ -16,13 +18,14 @@
     &__event {
         background-color: #000;
         position: fixed;
-        top: 0px;
+        top: 0;
         width: 100%;
         height: fit-content;
         text-align: center;
         font-size: 0.8rem;
         font-weight: 700;
         padding: 0.5rem;
+        line-height: 1.5;
 
         strong {
             background-color: red;

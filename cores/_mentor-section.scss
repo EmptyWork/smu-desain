@@ -1,0 +1,40 @@
+.mentor__section {
+    background-color: $warnadasar;
+    color: $warnadasartulisan;
+    margin-bottom: 5rem;
+    min-height: 100vh;
+
+    &-header {
+        text-align: center;
+        padding: 7rem 0 0 0;
+    }
+    
+    &-mentor {
+        img {
+            width: 100%;
+        }
+    }
+
+    &-nama {
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 0.7rem 0;
+    }
+
+    &-jabatan {
+        font-style: oblique;
+        font-weight: 600;
+        padding-bottom: 0.7rem;
+    }
+
+    &-right {
+        padding: 0 2rem;
+    }
+
+    &-tambahan {
+        max-width: 40ch;
+        @include breakpoint-down(medium) {
+            width: 100%;
+        }
+    }
+}

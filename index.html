@@ -28,6 +28,7 @@
     <div class="navbar__container">
       <div class="navbar__brand">
         <img src="./image/LogoUkim.png" alt="Logo UKIM" width="40px">
+        <img src="./image/eby-nb.png" alt="Logo UKIM" width="40px">
         <p>
           <strong class="navbar__brand-senat">Senat Mahasiswa</strong>
           <span class="navbar__brand-univ">Universitas</span>
@@ -39,22 +40,49 @@
         <div class="navbar__link"><a class="main__link" href="#">Visi</a></div>
         <div class="navbar__link"><a class="main__link" href="#">Blog</a></div>
         <div class="navbar__link">
-          <a class="main__link" href="#">UKIM
-            <div class="navbar__sublinks">
-              <div class="navbar__sublinks-container">
-                <div class="navbar__sublink"><a class="normal" target="_blank" href="https://ukim.ac.id">Website UKIM</a></div>
-                <div class="navbar__sublink"><a class="normal" target="_blank" href="http://siakad.ukim.ac.id/">Siakad UKIM</a></div>
-                <div class="navbar__sublink"><a class="normal" target="_blank" href="https://pmbukim.online/">PMBUKIM</a></div>
-              </div>
+          <div class="main__link">
+            <a href="#">UKIM <span class="more__link">▼</span>
+            </a>
+          </div>
+          <div class="navbar__sublinks">
+            <div class="navbar__sublinks-container">
+              <div class="navbar__sublink"><a class="normal" target="_blank" href="https://ukim.ac.id">Website UKIM</a></div>
+              <div class="navbar__sublink"><a class="normal" target="_blank" href="http://siakad.ukim.ac.id/">Siakad UKIM</a></div>
+              <div class="navbar__sublink"><a class="normal" target="_blank" href="https://pmbukim.online/">PMBUKIM</a></div>
             </div>
-          </a>
+          </div>
         </div>
       </div>
       <div class="navbar__more hide-for-desktop">
         <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
   </nav>
+  <div class="navbar__mobile">
+    <div class="navbar__more navbar__tutup hide-for-desktop">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="navbar__link"><a class="main__link" href="#">Galeri</a></div>
+    <div class="navbar__link"><a class="main__link" href="#">Misi</a></div>
+    <div class="navbar__link"><a class="main__link" href="#">Visi</a></div>
+    <div class="navbar__link"><a class="main__link" href="#">Blog</a></div>
+    <div class="navbar__link navbar__submenu">
+      <div class="main__link">
+        <a class="link__containsubmenu">UKIM  </a><span class="more__link">▼</span>
+      </div>
+    </div>
+    <div class="navbar__sublinks">
+      <div class="navbar__sublinks-container">
+        <div class="navbar__sublink"><a class="normal" target="_blank" href="https://ukim.ac.id">Website UKIM</a></div>
+        <div class="navbar__sublink"><a class="normal" target="_blank" href="http://siakad.ukim.ac.id/">Siakad UKIM</a></div>
+        <div class="navbar__sublink"><a class="normal" target="_blank" href="https://pmbukim.online/">PMBUKIM</a></div>
+      </div>
+    </div>
+  </div>
   <main>
     <section class="first__section">
       <div class="section__container">
@@ -69,12 +97,21 @@
         </h2>
       </div>
     </section>
-    <!-- TODO: Add Mentor area -->
-    <!-- <section c;ass="mentor_section">
-      <h2>
-        Mentor Kami!
-      </h2>
-    </section> -->
+    <section class="mentor__section">
+      <h2 class="mentor__section-header">Mentor Kami</h2>
+      <div class="section__container grid grid__2col-right mentor__section-mentor">
+        <div class="mentor__section-left">
+          <img src="./image/eby-nb.png" alt="#'s Photo" class="pengurus-img">
+        </div>
+        <div class="mentor__section-right">
+          <div class="mentor__section-nama">Nama</div>
+          <div class="mentor__section-jabatan">Wakil Rektor II</div>
+          <div class="mentor__section-tambahan">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet doloremque necessitatibus non, ipsam omnis, quia deleniti minima nulla minus labore assumenda quos, aliquid iste tenetur! Nesciunt, dicta accusamus? Adipisci, id.
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="second__section">
       <h2 class="second__section-hero">
         <strong>Siapa kami?</strong><br/><br/>
@@ -201,26 +238,41 @@
           <div class="footer__link"><a href="#">Facebook</a></div>
           <div class="footer__link"><a href="#">Whatsapp</a></div>
           <div class="footer__link"><a href="#">Twitter</a></div>
-          <div class="footer__link"><a href="#">Instagram</a></div>
-        </div>
-        <div class="footer__section footer__links">
-          <h4>Link UKIM</h4>
-          <div class="footer__link"><a href="#">Universitas Kristen Indonesia Maluku</a></div>
-          <div class="footer__link"><a href="#">Siakad Universitas</a></div>
-          <div class="footer__link"><a href="#">Fakultas Informatika</a></div><br/>
+          <div class="footer__link"><a href="#">Instagram</a></div><br/>
           <h4>Kredit</h4>
           <div class="footer__link">Desain oleh <a class="footer__link" href="http://eazbi.rf.gd" target="_blank">EmptyWork</a></div>
           <div class="footer__link">Art oleh <a class="footer__link" href="http://eazbi.rf.gd" target="_blank">EmptyWork</a></div>
           <div class="footer__link">Landing Image oleh <a class="footer__link" href="https://unsplash.com/@brandonsiu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Brandon Siu</a></div>
-
         </div>
-        <div class="footer__section footer__copyright">
-          <h4>Dilindungi oleh</h4>
-          <p>Hakcipta &copy; SMU Bidang V - <span class="tahunbuat">2021</span></p><br/>
+        <div class="footer__section footer__links">
+          <h4>UKIM</h4>
+          <div class="footer__link"><a href="#">Universitas Kristen Indonesia Maluku</a></div>
+          <div class="footer__link"><a href="#">Siakad Universitas</a></div>
+          <div class="footer__link"><a href="#">PMBUKIM</a></div>
+          <div class="footer__link"><a href="#">Fakultas Teologi</a></div>
+          <div class="footer__link"><a href="#">Fakultas Ekonomi</a></div>
+          <div class="footer__link"><a href="#">Fakultas Ilmu Sosial & Ilmu Politik</a></div>
+          <div class="footer__link"><a href="#">Fakultas Kesehatan</a></div>
+          <div class="footer__link"><a href="#">Fakultas Teknik</a></div>
+          <div class="footer__link"><a href="#">Fakultas Ilmu Komputer</a></div>
+          <div class="footer__link"><a href="#">Program Studi Hukum</a></div><br/>
+          <h4>Gereja Protestan Maluku</h4>
+          <div class="footer__link"><a href="#">Sinode GPM</a></div>
+          <div class="footer__link"><a href="#">Klasis Kota Ambon</a></div>
+        </div>
+        <div class="footer__section footer__support">
+          <h4>Didukung oleh</h4>
+          <div class="footer__support-imagegroup">
+            <img src="./image/LogoUkim.png" alt="Logo Universitas Kristen Indonesia Maluku" srcset="">
+            <img src="./image/Logo_GPM.png" alt="Logo Gereja Protestan Maluku Indonesia" srcset="">
+          </div>
           <p>Website ini dibuat dengan tujuan untuk membantu Senat Mahasiswa Universitas dalam melakukan kegiatan berorganisasi dan koordinasi dengan pihak kampus</p><br/>
           <p>Senat Mahasiswa Universitas merupakan organisasi dibawah naungan Universitas Kristen Indonesia Maluku</p>
         </div>
       </div>
+    </div>
+    <div class="footer__copyright">
+      <p>Hakcipta &copy; <span class="tahunbuat">2021</span> — dibuat oleh Senat Mahasiswa Bidang V</p>
     </div>
   </footer>
   <script src="./js/main.js"></script>

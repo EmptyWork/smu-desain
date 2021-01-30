@@ -1,9 +1,13 @@
 .first__section {
-    margin-top: 4rem;
+    // margin-top: 4rem;
+    min-height: 100vh;
+    @extend %flex;
+    align-items: center;
+    justify-content: center;
     &-hero {
         // background-color: red;
         padding: 7rem 1rem;
-        width: 45ch;
+        max-width: 45ch;
         text-align: center;
         font-weight: normal;
 
