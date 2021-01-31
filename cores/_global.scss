@@ -56,13 +56,47 @@ a, a:focus, a:active, a:hover {
 
 .grid {
     display: grid;
-    &__2col-right {
-        grid-template-columns: 50% 50%;
-        gap: 2rem;
+    &__2col {
+        grid-template-columns: 1fr 1fr;
+        // gap: 2rem;
         align-items: center;
 
         @include breakpoint-down(medium) {
             grid-template-columns: 1fr;
         }
     }
+}
+
+
+.desc {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: center;
+    width: 45ch;
+    @include breakpoint-down(medium) {
+        width: 100%;
+        padding: 0 1rem;
+    }
+}
+
+[class*="hero"] {
+    // @extend %dev;
+    color: $warnadasarmuda;
+    font-size: 1.7rem;
+    @include breakpoint-down(large) {
+        font-size: 1.5rem;
+    }
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 1.5rem 0;
+    max-width: 45ch;
+    text-align: center;
+}
+
+[class$="__section"] {
+    // @extend %dev;
+    @extend %flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
 }

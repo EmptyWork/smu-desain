@@ -7,15 +7,6 @@
         text-align: center;
         font-weight: normal;
 
-        .desc {
-            font-size: 0.9rem;
-            line-height: 1.5;
-            width: 45ch;
-            margin: auto;
-            @include breakpoint-down(medium) {
-                width: 100%;
-            }
-        }
     }
 
     &-daftarpengurus {
@@ -38,8 +29,19 @@
                 color: $warnadasartulisan;
 
                 .pengurus-nama {
+                    margin-bottom: 0.4rem;
+                    font-size: 1.2rem;
                     font-weight: 700;
                 }
+
+                .pengurus-jurusan {
+                    margin-bottom: 0.2rem;
+                    .pengurus-fakultas {
+                        font-weight: 500;
+                    }
+                }
+
+                
                 .pengurus-bidang {
                     display: inline-block;
                     background-color: red;

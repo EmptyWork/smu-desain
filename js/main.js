@@ -1,9 +1,9 @@
 
 // Javascript untuk Tahun pembuatan
 const keTanggal = document.querySelector('.tahunbuat');
-const diBuat = 2021;
+const diBuat = 2020;
 const tahun = new Date();
-(() => {(diBuat !== tahun.getFullYear()) ? keTanggal.innerHTML = `${diBuat} - ${tahun.getFullYear()}<br/>` : keTanggal.innerHTML = diBuat;})()
+(() => {(diBuat !== tahun.getFullYear()) ? keTanggal.innerHTML = `${diBuat} - ${tahun.getFullYear()}` : keTanggal.innerHTML = diBuat;})()
 
 // Javascript untuk pemberitahuan Lomba/Kegiatan
 
@@ -40,8 +40,17 @@ let submenuNavbarMobile = navbarDiv.querySelectorAll('.navbar__submenu')
 
 submenuNavbarMobile.forEach(sublinks => {
     sublinks.addEventListener('click', e => {
+        // let sublinksOpen = document.querySelector('.navbar__sublinks.open')
         let submenuActive = e.target.parentElement.parentElement
-        console.log(submenuActive)
+        // console.log(sublinksOpen)
+        // if(sublinksOpen && sublinksOpen !== submenuActive){
+        //     sublinksOpen.classList.remove('open')
+        //     sublinksOpen.previousElementSibling.classList.remove('open')
+        //     setTimeout(() => {
+        //         sublinksOpen.display = 'none'
+        //     }, 200)
+        // }
+        // console.log(submenuActive)
         if(submenuActive.classList.contains('open')) {
             submenuActive.classList.remove('open')
             submenuActive.nextElementSibling.classList.remove('open')

@@ -1,6 +1,7 @@
 .landingpage {
     background-color: $warnadasar;
     background-image: linear-gradient(to bottom, transparent, $warnadasar), url('../image/stock-3-min.jpg');
+    // background-image: linear-gradient(to bottom, transparent, $warnadasar), url('https://2.bp.blogspot.com/-XaoYpW6anTc/Vxh0HJClECI/AAAAAAAACcc/dR2bbG3uES0mL_rax-KxYU5q4vYHdx3NQCLcB/s1600/12479447_1550766128575419_1543490671_n.jpg');
     background-repeat: no-repeat;
     @include breakpoint-up(large) {
         background-position: bottom center;
@@ -15,6 +16,18 @@
     padding: 2rem;
     @extend %flex;
 
+    &__univ {
+        font-weight: 600;
+    }
+
+    &__header {
+        font-size: 3rem;
+        @include breakpoint-down(medium) {
+            font-size: 1.7rem;
+        }
+        font-weight: 700;
+    }
+
     &__event {
         background-color: #000;
         position: fixed;
@@ -23,7 +36,7 @@
         height: fit-content;
         text-align: center;
         font-size: 0.8rem;
-        font-weight: 700;
+        font-weight: 400;
         padding: 0.5rem;
         line-height: 1.5;
 

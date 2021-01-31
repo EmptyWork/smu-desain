@@ -83,6 +83,7 @@
     }
 
     &__mobile {
+        overflow-y: auto;
         @include breakpoint-up(large) {
             display: none;
         }
@@ -94,26 +95,40 @@
             transform: translateY(0%)
         }
 
+        .navbar__link {
+            width: 100%;
+            text-align: center;
+            padding: 1rem;
+            background-color: $warnadasar;
+            z-index: 9;
+        }
+
         .navbar__submenu {
             @extend %flex;
             justify-content: center;
             
             + .navbar__sublinks {
                 display: none;
-                background-color: #08091a;
+                background-color: $warnadasarmuda;
+                width: 100%;
+                height: 0%;
+                overflow: hidden;
                 padding: 0.4rem;
                 visibility: hidden;
                 transform: translateY(-100%);
                 text-align: center;
                 .navbar__sublink {
-                    padding: 0.4rem;
+                    padding: 1rem;
                 }
             }
             
             &.open {
+                background-color: $warnadasartua;
                 + .navbar__sublinks.open {
                     transform: translateY(0%);
+                    width: 100%;
                     visibility: visible;
+                    height: fit-content;
                 }
             }
         }
@@ -133,7 +148,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 20px;
     }
 
     .main__link {        
@@ -215,23 +229,12 @@
             &:not(:last-of-type) {
                 margin-bottom: 0.3375rem;
             }
-            // &::after {
-            //     content: "";
-            //     position: absolute;
-            //     width: 1.5625rem;
-            //     height: 0.125rem;
-            //     background-color: $warnadasartulisan;
-            //     margin-top: 0.4375rem;
-            // }
-            // &::before {
-            //     content: "";
-            //     position: absolute;
-            //     width: 1.5625rem;
-            //     height: 0.125rem;
-            //     background-color: $warnadasartulisan;
-            //     margin-top: -0.4375rem;
-            // }
+        }
 
+        &.navbar__tutup {
+            position: absolute;
+            right: 2rem;
+            top: 2rem;
         }
         
         &.open, &.navbar__tutup {

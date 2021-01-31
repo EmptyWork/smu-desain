@@ -9,8 +9,7 @@
     <meta name="description" content="Website Resmi dari Senat Mahasiswa Universitas Kristen Indonesia Maluku" />
     <title>SM Universitas Kristen Indonesia  Maluku</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/brands.min.css" integrity="sha512-dBL5cY4qTt42J1cfabCHTYR7KMztyd+n4t2GhD6EH/MKWJIIHuEYckJ1nHEpTwIaiDkrjzbc6WyiSkdLP+3INQ==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="cores/style.css">
     <link rel="shortcut icon" href="image/LogoUkim.png" type="image/x-png">
 </head>
@@ -18,9 +17,9 @@
   <header class="landingpage">
     <div class="landingpage__event"></div>
     <div class="landingpage__text">
-      <p>Universitas Kristen Indonesia Maluku</p>
-      <h1>Senat Mahasiswa Universitas</h1>
-      <p>Ambon, Periode 2020-2021</p>
+      <p class="landingpage__univ">Universitas Kristen Indonesia Maluku</p>
+      <h1 class="landingpage__header">Senat Mahasiswa Universitas</h1>
+      <p class="landingpage__tambahan"><strong>Ambon</strong>, Periode 2020-2021</p>
     </div>
     <!-- <img src="./image/eby-nb.png" alt="" srcset=""> -->
   </header>
@@ -87,23 +86,26 @@
     <section class="first__section">
       <div class="section__container">
         <h2 class="first__section-hero">
-          <strong>Motto Kami!</strong><br/><br/>
-          "Memberikan contoh yang baik untuk yang lain, menjadi organisasi yang mandiri dan kreatif"<br/>
-          <small>Ketua Umum Senat Mahasiswa Universitas*</small><br/><br/>
+          <strong>Motto Kami!</strong>
+        </h2>
+        <blockquote class="qoute">
+          <q lang="jp" class="qoute__message">Memberikan contoh yang baik untuk yang lain, menjadi organisasi yang mandiri dan kreatif</q>
+          <p class="qoute__author">Ketua Umum Senat Mahasiswa Universitas*</p>
           <div class="button__group">
             <button>Program Kami</button><button>Laporan</button><button>Struktur</button>
           </div>
-          <span class="addnote">*Senat Mahasiswa Periode 2020/2021</span>
-        </h2>
+          <span class="qoute__addnote">*Senat Mahasiswa Periode 2020/2021</span>
+        </blockquote>
       </div>
     </section>
     <section class="mentor__section">
-      <h2 class="mentor__section-header">Pengawas</h2>
-      <div class="section__container grid grid__2col-right mentor__section-mentor">
-        <div class="mentor__section-left">
+      <!-- <h2 class="mentor__section-hero">Pengawas</h2>
+      <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> -->
+      <div class="section__container grid grid__2col grid__2col-image-left mentor__section-mentor">
+        <div class="mentor__section-left mentor__section-img">
           <img src="./image/eby-nb.png" alt="#'s Photo" class="pengurus-img">
         </div>
-        <div class="mentor__section-right">
+        <div class="mentor__section-right mentor__section-text">
           <div class="mentor__section-nama">Nama</div>
           <div class="mentor__section-jabatan">Jabatan</div>
           <div class="mentor__section-tambahan">
@@ -111,12 +113,24 @@
           </div>
         </div>
       </div>
+      <div class="section__container grid grid__2col grid__2col-image-right mentor__section-mentor">
+        <div class="mentor__section-right mentor__section-img">
+          <img src="./image/eby-nb.png" alt="#'s Photo" class="pengurus-img">
+        </div>
+        <div class="mentor__section-left mentor__section-text">
+          <div class="mentor__section-nama">Nama</div>
+          <div class="mentor__section-jabatan">Jabatan</div>
+          <div class="mentor__section-tambahan">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet doloremque necessitatibus non, ipsam omnis, quia deleniti minima nulla minus labore assumenda quos, aliquid iste tenetur! Nesciunt, dicta accusamus? Adipisci, id.
+          </div>
+        </div>
     </section>
     <section class="second__section">
       <h2 class="second__section-hero">
-        <strong>Siapa kami?</strong><br/><br/>
-        <p class="desc">Kami adalah Perwakilan-perwakilan dari Fakultas yang ada di Universitas Kristen Indonesia Maluku</p>
+        <strong>Siapa kami?</strong>
       </h2>
+      <p class="desc">Kami adalah Perwakilan-perwakilan dari Fakultas yang ada di Universitas Kristen Indonesia Maluku</p>
+      <!-- <span style="font-family: 'Ubuntu Mono', monospace; font-size: 1.3rem; margin-top: 1.3rem; font-weight: 700; color: red; text-align: center;">KABINET<br/> TERBANG KE ANGKASA RAYA</span> -->
       <div class="section__container">
         <div class="second__section-daftarpengurus">
           <div class="pengurus">
@@ -131,7 +145,7 @@
             <img src="./image/eby-nb.png" alt="#'s Photo" class="pengurus-img">
             <div class="pengurus-info">
               <div class="pengurus-nama">Nama</div>
-              <div class="pengurus-jurusan">Fakultas'00</div>
+              <div class="pengurus-jurusan"><span class="pengurus-fakultas">Fakultas</span>'00</div>
               <div class="pengurus-bidang">Sekretaris Umum</div>
             </div>
           </div>
@@ -139,7 +153,7 @@
             <img src="./image/eby-nb.png" alt="#'s Photo" class="pengurus-img">
             <div class="pengurus-info">
               <div class="pengurus-nama">Nama</div>
-              <div class="pengurus-jurusan">Fakultas'00</div>
+              <div class="pengurus-jurusan"><span class="pengurus-fakultas">Fakultas</span>'00</div>
               <div class="pengurus-bidang">Bendahara Umum</div>
             </div>
           </div>
@@ -147,7 +161,7 @@
             <img src="./image/eby-nb.png" alt="#'s Photo" class="pengurus-img">
             <div class="pengurus-info">
               <div class="pengurus-nama">Nama</div>
-              <div class="pengurus-jurusan">Fakultas'00</div>
+              <div class="pengurus-jurusan"><span class="pengurus-fakultas">Fakultas</span>'00</div>
               <div class="pengurus-bidang">Ketua Bidang I</div>
             </div>
           </div>
@@ -155,7 +169,7 @@
             <img src="./image/eby-nb.png" alt="#'s Photo" class="pengurus-img">
             <div class="pengurus-info">
               <div class="pengurus-nama">Nama</div>
-              <div class="pengurus-jurusan">Fakultas'00</div>
+              <div class="pengurus-jurusan"><span class="pengurus-fakultas">Fakultas</span>'00</div>
               <div class="pengurus-bidang">Ketua Bidang II</div>
             </div>
           </div>
@@ -163,7 +177,7 @@
             <img src="./image/eby-nb.png" alt="#'s Photo" class="pengurus-img">
             <div class="pengurus-info">
               <div class="pengurus-nama">Nama</div>
-              <div class="pengurus-jurusan">Fakultas'00</div>
+              <div class="pengurus-jurusan"><span class="pengurus-fakultas">Fakultas</span>'00</div>
               <div class="pengurus-bidang">Ketua Bidang III</div>
             </div>
           </div>
@@ -171,7 +185,7 @@
             <img src="./image/eby-nb.png" alt="#'s Photo" class="pengurus-img">
             <div class="pengurus-info">
               <div class="pengurus-nama">Nama</div>
-              <div class="pengurus-jurusan">Fakultas'00</div>
+              <div class="pengurus-jurusan"><span class="pengurus-fakultas">Fakultas</span>'00</div>
               <div class="pengurus-bidang">Ketua Bidang IV</div>
             </div>
           </div>
@@ -179,7 +193,7 @@
             <img src="./image/eby-nb.png" alt="#'s Photo" class="pengurus-img">
             <div class="pengurus-info">
               <div class="pengurus-nama">Nama</div>
-              <div class="pengurus-jurusan">Fakultas'00</div>
+              <div class="pengurus-jurusan"><span class="pengurus-fakultas">Fakultas</span>'00</div>
               <div class="pengurus-bidang">Ketua Bidang V</div>
             </div>
           </div>
@@ -187,7 +201,7 @@
             <img src="./image/eby-nb.png" alt="#'s Photo" class="pengurus-img">
             <div class="pengurus-info">
               <div class="pengurus-nama">Nama</div>
-              <div class="pengurus-jurusan">Fakultas'00</div>
+              <div class="pengurus-jurusan"><span class="pengurus-fakultas">Fakultas</span>'00</div>
               <div class="pengurus-bidang">Sekretaris Bidang I</div>
             </div>
           </div>
@@ -195,7 +209,7 @@
             <img src="./image/eby-nb.png" alt="#'s Photo" class="pengurus-img">
             <div class="pengurus-info">
               <div class="pengurus-nama">Nama</div>
-              <div class="pengurus-jurusan">Fakultas'00</div>
+              <div class="pengurus-jurusan"><span class="pengurus-fakultas">Fakultas</span>'00</div>
               <div class="pengurus-bidang">Sekretaris Bidang II</div>
             </div>
           </div>
@@ -203,7 +217,7 @@
             <img src="./image/eby-nb.png" alt="#'s Photo" class="pengurus-img">
             <div class="pengurus-info">
               <div class="pengurus-nama">Nama</div>
-              <div class="pengurus-jurusan">Fakultas'00</div>
+              <div class="pengurus-jurusan"><span class="pengurus-fakultas">Fakultas</span>'00</div>
               <div class="pengurus-bidang">Sekretaris Bidang III</div>
             </div>
           </div>
@@ -211,7 +225,7 @@
             <img src="./image/eby-nb.png" alt="#'s Photo" class="pengurus-img">
             <div class="pengurus-info">
               <div class="pengurus-nama">Nama</div>
-              <div class="pengurus-jurusan">Fakultas'00</div>
+              <div class="pengurus-jurusan"><span class="pengurus-fakultas">Fakultas</span>'00</div>
               <div class="pengurus-bidang">Sekretaris Bidang IV</div>
             </div>
           </div>
@@ -219,7 +233,7 @@
             <img src="./image/eby-nb.png" alt="#'s Photo" class="pengurus-img">
             <div class="pengurus-info">
               <div class="pengurus-nama">Nama</div>
-              <div class="pengurus-jurusan">Fakultas'00</div>
+              <div class="pengurus-jurusan"><span class="pengurus-fakultas">Fakultas</span>'00</div>
               <div class="pengurus-bidang">Sekretaris Bidang V</div>
             </div>
           </div>
