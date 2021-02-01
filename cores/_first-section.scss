@@ -5,6 +5,10 @@
     align-items: center;
     justify-content: center;
 
+    &.smaller {
+        min-height: 50vh;
+    }
+
     .section__container {
         flex-direction: column;
         @extend %flex;

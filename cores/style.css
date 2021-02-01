@@ -11,6 +11,13 @@
   --warnadasar: #001B3A;
   --warnadasarmuda: #002c5e;
   --warnadasartulisan: #e7e7e7;
+  --fakultasteologi: #fff;
+  --fakultasilmukomputer: #fff;
+  --fakultasilmusosialdanpolitik: #fff;
+  --fakultasekonomi: #fff;
+  --fakultaskesehatan: #fff;
+  --fakultasteknik: #fff;
+  --prodihukum: #fff;
 }
 
 .mentor__section-img, .first__section .qoute, .first__section .section__container, .first__section, .navbar .main__link, .navbar__mobile .navbar__submenu, .navbar__middle, .navbar__brand, .landingpage, [class$=__section] {
@@ -402,6 +409,9 @@ a, a:focus, a:active, a:hover {
   min-height: 100vh;
   align-items: center;
   justify-content: center;
+}
+.first__section.smaller {
+  min-height: 50vh;
 }
 .first__section .section__container {
   flex-direction: column;

@@ -16,13 +16,13 @@ let daftarLomba = [
 ]
 let index = Math.floor(Math.random() * daftarLomba.length)
 
-tempatTunjuk.innerHTML = daftarLomba[index]
+if(tempatTunjuk) tempatTunjuk.innerHTML = daftarLomba[index]
 const gantiLomba = () => {
     nextLomba(daftarLomba, tempatTunjuk)
 }
 
 const nextLomba = (_daftarLomba, _base) => {
-    _base.innerHTML = daftarLomba[index];
+    if(_base) _base.innerHTML = daftarLomba[index];
     (index >= daftarLomba.length - 1) ? index = 0: index++;
 }
 

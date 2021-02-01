@@ -242,17 +242,17 @@
                 &:first-of-type {
                     transform: rotateZ(45deg);
                     transform-origin: top left;
-                    margin-left: 5px;
+                    margin-left: 0.3125rem;
                 }
                 &:nth-of-type(2) {
                     opacity: 0;
-                    margin-right: -20px;
+                    margin-right: -1.25rem;
                 }
                 &:last-of-type {
                     transform: rotateZ(-45deg);
                     transform-origin: bottom left;
-                    margin-left: 5px;
-                    margin-top: 2px;
+                    margin-left: 0.3125rem;
+                    margin-top: 0.125rem;
                 }
             }
         }
