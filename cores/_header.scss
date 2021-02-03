@@ -1,7 +1,7 @@
 .landingpage {
     background-color: $warnadasar;
-    background-image: linear-gradient(to bottom, transparent, $warnadasar), url('../image/stock-3-min.jpg');
-    // background-image: linear-gradient(to bottom, transparent, $warnadasar), url('https://2.bp.blogspot.com/-XaoYpW6anTc/Vxh0HJClECI/AAAAAAAACcc/dR2bbG3uES0mL_rax-KxYU5q4vYHdx3NQCLcB/s1600/12479447_1550766128575419_1543490671_n.jpg');
+    // background-image: linear-gradient(to bottom, transparent, $warnadasar), url('../image/stock-3-min.jpg');
+    background-image: linear-gradient(to bottom, transparent, $warnadasar), url('https://2.bp.blogspot.com/-XaoYpW6anTc/Vxh0HJClECI/AAAAAAAACcc/dR2bbG3uES0mL_rax-KxYU5q4vYHdx3NQCLcB/s1600/12479447_1550766128575419_1543490671_n.jpg');
     background-repeat: no-repeat;
     @include breakpoint-up(large) {
         background-position: bottom center;

@@ -13,15 +13,7 @@
         flex-direction: column;
         @extend %flex;
     }
-
-    &-hero {
-        // background-color: red;
-        padding: 1.5rem 0;
-        max-width: 45ch;
-        text-align: center;
-        // font-weight: normal;
-    }
-
+    
     .qoute {
         @extend %flex;
         flex-direction: column;
@@ -56,7 +48,8 @@
     .button {
         &__group {
             width: fit-content;
-            button {
+            padding: 1rem 0.1rem;
+            button, .button {
                 @include breakpoint-down(medium) {
                     padding: 1rem 0.7rem;
                     font-size: 0.6rem;
@@ -66,16 +59,20 @@
                     opacity: 0.8;
                 }
             }
-            button:first-of-type {
+            button:first-of-type, .button:first-of-type {
                 // background-color: red;
                 // border-radius-top-left: 2rem;
                 border-top-left-radius: 0.4rem;
                 border-bottom-left-radius: 0.4rem;
             }
-            button:last-of-type {
+            button:last-of-type, .button:last-of-type {
                 // background-color: red;
                 border-top-right-radius: 0.4rem;
                 border-bottom-right-radius: 0.4rem;
+            }
+
+            button:hover, .button:hover, button:focus, .button:focus {
+                color: $warnadasartulisan
             }
         }
     }

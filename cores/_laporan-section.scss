@@ -1,0 +1,58 @@
+.laporan__section {
+    background-color: orange;
+    min-height: 20vh;
+    padding: 2rem 0;
+    
+    &-desc {
+        max-width: 45ch;
+        padding: 0 0 1rem 0;
+        text-align: center;
+    }
+
+    &-form {
+        padding: 2rem;
+    }
+
+    &-input {
+        border: none;
+        width: 100%;
+        padding: 2rem;
+        font-family: inherit;
+        line-height: 1.5;
+        // height: fit-content;
+        min-height: 2rem;
+    }
+
+    &-hero {
+        // @extend %dev;
+        display: block;
+        padding-bottom: 0.7rem;
+        // color: red;
+        // background-color: red;
+        // padding: rem 0;
+        max-width: 45ch;
+        text-align: center;
+        // font-weight: normal;
+    }
+
+    &-jenis {
+        background-color: #e4e4e4;
+        padding: 0.7rem;
+        border: none;
+    }
+
+    .button {
+        &__group {
+            .button:not(:first-of-type) {
+                margin-left: -0.3rem;
+            }
+        }
+        &__input {
+            margin-top: -0.3rem;
+        }
+    }
+    
+    // &-header {
+    //     font-size: 1.5rem;
+    // }
+}

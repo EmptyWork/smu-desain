@@ -14,6 +14,8 @@
     <link rel="shortcut icon" href="image/LogoUkim.png" type="image/x-png">
 </head>
 <body>
+  <div class="pemberitahuan__container">
+  </div>
   <header class="landingpage">
     <div class="landingpage__event"></div>
     <div class="landingpage__text">
@@ -92,13 +94,34 @@
           <q lang="jp" class="qoute__message">Memberikan contoh yang baik untuk yang lain, menjadi organisasi yang mandiri dan kreatif</q>
           <p class="qoute__author">Ketua Umum Senat Mahasiswa Universitas*</p>
           <div class="button__group">
-            <button>Program Kami</button><button><a href="./pages/laporan.html">Laporan</a></button><button>Struktur</button>
+            <a href="#" class="button">Program Kami</button><a href="./pages/laporan.html" class="button">Laporan</a><a href="#" class="button">Struktur</a>
           </div>
           <span class="qoute__addnote">*Senat Mahasiswa Periode 2020/2021</span>
         </blockquote>
       </div>
     </section>
-    <section class="mentor__section">
+    <section data-experen class="laporan__section">
+      <form class="laporan__section-form" action="#" method="post">
+        <label class="laporan__section-hero" for="laporan"><strong>Ada Komplain?</strong></label>
+        <p class="laporan__section-desc">Jika kalian memiliki kendala dalam proses perkuliahan, registrasi, atau akademik, bisa kalian laporakan disini.</p>
+        <select name="laporan-jenis" class="laporan__section-jenis" id="laporan-jenis">
+          <option value="0">Perkuliahan</option>
+          <option value="0">Registrasi</option>
+          <option value="0">Akademik</option>
+          <option value="0">Beasiswa</option>
+          <option value="0">Keuangan</option>
+          <option value="0">Lainnya</option>
+        </select>
+        <textarea name="text" id="text" class="laporan__section-input" rows="10"></textarea>
+        <!-- <input type="text" class="laporan__section-input" name="laporan" id="laporan"> -->
+        <div class="button__group button__input">
+          <input class="button" type="submit" value="Laporkan">
+          <!-- <input class="button" type="submit" value="Konfirmasi">
+          <input class="button" type="submit" value="Laporkan"> -->
+        </div>
+      </form>
+    </section>
+    <section data-experen class="mentor__section">
       <!-- <h2 class="mentor__section-hero">Pengawas</h2>
       <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> -->
       <div class="section__container grid grid__2col grid__2col-image-left mentor__section-mentor">
@@ -107,7 +130,7 @@
         </div>
         <div class="mentor__section-right mentor__section-text">
           <div class="mentor__section-nama">Nama</div>
-          <div class="mentor__section-jabatan">Jabatan</div>
+          <div class="mentor__section-jabatan">Rektor</div>
           <div class="mentor__section-tambahan">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet doloremque necessitatibus non, ipsam omnis, quia deleniti minima nulla minus labore assumenda quos, aliquid iste tenetur! Nesciunt, dicta accusamus? Adipisci, id.
           </div>
@@ -119,9 +142,9 @@
         </div>
         <div class="mentor__section-left mentor__section-text">
           <div class="mentor__section-nama">Nama</div>
-          <div class="mentor__section-jabatan">Jabatan</div>
+          <div class="mentor__section-jabatan">Wakil Rektor III</div>
           <div class="mentor__section-tambahan">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet doloremque necessitatibus non, ipsam omnis, quia deleniti minima nulla minus labore assumenda quos, aliquid iste tenetur! Nesciunt, dicta accusamus? Adipisci, id.
+            Identitas tambahan dari semua ini
           </div>
         </div>
     </section>
@@ -131,7 +154,7 @@
       </h2>
       <p class="desc">Kami adalah Perwakilan-perwakilan dari Fakultas yang ada di Universitas Kristen Indonesia Maluku</p>
       <!-- <span style="font-family: 'Ubuntu Mono', monospace; font-size: 1.3rem; margin-top: 1.3rem; font-weight: 700; color: red; text-align: center;">KABINET<br/> TERBANG KE ANGKASA RAYA</span> -->
-      <div class="section__container">
+      <div data-experen class="section__container">
         <div class="second__section-daftarpengurus">
           <div class="pengurus">
             <img src="./image/eby-nb.png" alt="#'s Photo" class="pengurus-img">
@@ -290,5 +313,6 @@
     </div>
   </footer>
   <script src="./js/main.js"></script>
+  <!-- <script type="module" src="./js/senat.js"></script> -->
 </body>
 </html>

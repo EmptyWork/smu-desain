@@ -41,8 +41,7 @@ let submenuNavbarMobile = navbarDiv.querySelectorAll('.navbar__submenu')
 submenuNavbarMobile.forEach(sublinks => {
     sublinks.addEventListener('click', e => {
         // let sublinksOpen = document.querySelector('.navbar__sublinks.open')
-        let submenuActive = e.target.parentElement.parentElement
-        // console.log(sublinksOpen)
+        let submenuActive = (e.target.classList.contains('link__containsubmenu')) ? e.target.parentElement.parentElement : e.target
         // if(sublinksOpen && sublinksOpen !== submenuActive){
         //     sublinksOpen.classList.remove('open')
         //     sublinksOpen.previousElementSibling.classList.remove('open')
@@ -50,7 +49,6 @@ submenuNavbarMobile.forEach(sublinks => {
         //         sublinksOpen.display = 'none'
         //     }, 200)
         // }
-        // console.log(submenuActive)
         if(submenuActive.classList.contains('open')) {
             submenuActive.classList.remove('open')
             submenuActive.nextElementSibling.classList.remove('open')
@@ -69,7 +67,6 @@ submenuNavbarMobile.forEach(sublinks => {
 })
 
 tombolMobile.addEventListener('click', e => {
-    // console.log(navbarLokasi);
     if(tombolMobile.classList.contains('open')) {
         tombolMobile.classList.remove('open')
         document.body.classList.remove('menuOpen')
@@ -82,7 +79,6 @@ tombolMobile.addEventListener('click', e => {
 })
 
 tombolTutup.addEventListener('click', e => {
-    // console.log(navbarLokasi);
     if(tombolMobile.classList.contains('open')) {
         tombolMobile.classList.remove('open')
         document.body.classList.remove('menuOpen')
@@ -99,3 +95,75 @@ tombolTutup.addEventListener('click', e => {
 // document.body.addEventListener('click', e => {
 //     console.log(e.target.classList)
 // })
+
+
+// Javascript untuk profile anggota
+
+let paraAnggota = document.querySelectorAll('.pengurus')
+
+paraAnggota.forEach(anggota => {
+    anggota.addEventListener('click', e => {
+
+    })
+})
+
+
+// Javascript untuk Laporan
+
+let laporan = document.querySelector('.laporan__section-input')
+
+laporan.addEventListener('click', () => {
+    buatPemberitahuan(23, 'Error: Laporan masih belum bisa di gunakan', 'error', 1)
+})
+
+const buatPemberitahuan = (id, data, type, auto) => {
+    let contentBaru = document.createElement('div')
+    let pemberitahuanTempat = document.querySelector('.pemberitahuan__container')
+
+    contentBaru.setAttribute('data-id', id)
+    contentBaru.classList.add('pemberitahuan__card')
+    let keluar = document.createElement('div')
+    keluar.classList.add('pemberitahuan__card-keluar')
+    if(type === 'error') contentBaru.classList.add('pemberitahuan__card-red')
+    else if(type === 'berhasil') contentBaru.classList.add('pemberitahuan__card-green')
+    contentBaru.textContent = data;
+    
+    pemberitahuanTempat.appendChild(contentBaru);
+    contentBaru.appendChild(keluar)
+    let tutup = document.querySelectorAll('.pemberitahuan__card-keluar')
+    
+    tutup.forEach(tutup => {
+        tutup.addEventListener('click', e => {
+            // console.log(e.target)
+            e.target.parentElement.remove()
+        })
+    })
+    
+    setTimeout(() => {
+        if(auto) {
+            contentBaru.remove()
+        }
+    }, 4000)
+}
+
+// Javascript Pemberitahuan tentang Eksperimental Features
+
+let eksperimental = document.querySelectorAll('[data-experen]')
+
+// console.log(eksperimental)
+
+eksperimental.forEach(expren => {
+    expren.addEventListener('click', () => {
+        buatPemberitahuan(Math.floor(Math.random() * 20), 'Feature ini masih belum tersedia, atau masih dalam Eksperimental')
+    })
+})
+
+
+let tutup = document.querySelectorAll('.pemberitahuan__card-keluar')
+
+tutup.forEach(tutup => {
+    tutup.addEventListener('click', e => {
+        // console.log(e.target)
+        e.target.parentElement.remove()
+    })
+})

@@ -29,6 +29,7 @@
         align-items: center;
         gap: 0.4rem;
         text-transform: uppercase;
+
         &-senat {
             display: block;
             width: fit-content;
@@ -48,6 +49,7 @@
 
         @extend %flex-sb;
     }
+
     &__middle {
         @extend %flex;
         gap: 1.125rem;
@@ -168,6 +170,13 @@
         &:hover {
             .navbar__sublinks {
                 display: block;
+            }
+        }
+
+        &.open {
+            .more__link {
+                display: inline-block;
+                transform: rotate(180deg);
             }
         }
 
