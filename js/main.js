@@ -167,3 +167,9 @@ tutup.forEach(tutup => {
         e.target.parentElement.remove()
     })
 })
+
+// Javascript untuk pemberitahuan event atau kegiatan
+
+let adaKegiatan = document.querySelector('.landingpage__event')
+navbarLokasi.style.top = adaKegiatan.clientHeight + 'px'
+console.log(adaKegiatan.clientHeight)

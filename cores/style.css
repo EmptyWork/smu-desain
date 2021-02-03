@@ -218,6 +218,7 @@ a, a:focus, a:active, a:hover {
   font-weight: 400;
   padding: 0.5rem;
   line-height: 1.5;
+  z-index: 8;
 }
 .landingpage__event strong {
   background-color: red;
